@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     static double value1=0;
     boolean computing = false;
     static boolean point=false;
+    static boolean type = true;
     static double digit=1;
     Operation operation;
     @Override
@@ -41,7 +42,6 @@ public class MainActivity extends AppCompatActivity {
         Button btnRes = findViewById(R.id.btnRes);
 
         final TextView textView = findViewById(R.id.textView);
-
 
 
         btnComa.setOnClickListener(new View.OnClickListener() {
