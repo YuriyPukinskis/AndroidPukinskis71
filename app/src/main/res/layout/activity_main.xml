@@ -33,6 +33,7 @@
             android:layout_below="@+id/textView">
 
             <LinearLayout
+                android:id="@+id/strangeLayout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -360,7 +361,49 @@
                 </LinearLayout>
                 `
             </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="horizontal"
+                android:id="@+id/engineer">
+                <Button
+                    android:id="@+id/btnR"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="en"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+                <Button
+                    android:id="@+id/btnR1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="ge"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+                <Button
+                    android:id="@+id/btnR2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="ne"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+                <Button
+                    android:id="@+id/btnR3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="er"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </LinearLayout>
         </FrameLayout>
+
+        <Button
+            android:id="@+id/btnChange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/frame"
+            android:text="Change" />
     </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

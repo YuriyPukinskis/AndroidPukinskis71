@@ -4,8 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.graphics.Color;
 import android.os.Bundle;
+import android.text.Layout;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -39,10 +41,28 @@ public class MainActivity extends AppCompatActivity {
         final Button btnMul = findViewById(R.id.btnMul);
         final Button btnSub = findViewById(R.id.btnSub);
         final Button btnAdd = findViewById(R.id.btnAdd);
+        final LinearLayout strLay = findViewById(R.id.strangeLayout);
+        final LinearLayout eng = findViewById(R.id.engineer);
         Button btnRes = findViewById(R.id.btnRes);
+        Button btnCh = findViewById(R.id.btnChange);
+        eng.setVisibility(View.GONE);
 
         final TextView textView = findViewById(R.id.textView);
 
+        btnCh.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                type=!type;
+                if(type){
+                    strLay.setVisibility(View.VISIBLE);
+                    eng.setVisibility(View.GONE);
+                }
+                else{
+                    strLay.setVisibility(View.GONE);
+                    eng.setVisibility(View.VISIBLE);
+                }
+            }
+        });
 
         btnComa.setOnClickListener(new View.OnClickListener() {
             @Override
